@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Carousel Component</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <ul class="nav-container flex hidden">
+        <li><a class="active" href="#">HOME</a></li>
+        <li><a href="#">SHOP</a></li>
+        <li><a href="#">ABOUT</a></li>
+      </ul>
+
+      <div class="logo-con flex">
+        <img src="./IMAGES/logo.png" alt="logo" />
+      </div>
+
+      <div class="flex hidden">
+        <img src="./IMAGES/icons.png" alt="icons" />
+      </div>
+    </nav>
+
+    <div class="slider">
+      <div class="watch-container left hidden">
+        <img
+          src="./IMAGES/WATCH-1.png"
+          alt="watch-image"
+          class="carousel-image"
+        />
+        <img
+          class="shade"
+          src="./IMAGES/left-shade.png"
+          alt="watch-shade"
+        />
+      </div>
+      <div class="watch-container watch-center w-full">
+        <img class="btn btn-left" src="./IMAGES/circle-left.svg" />
+        <img class="btn btn-right" src="./IMAGES/circle-right.svg" />
+        <img
+          src="./IMAGES/WATCH-2.png"
+          alt="watch-image"
+          class="carousel-image"
+        />
+        <div class="flex space w-8 mb">
+          <h2 class="watch-name">Watch Name</h2>
+          <p class="watch-price">Price</p>
+        </div>
+
+        <div class="flex space w-8 gap">
+          <button class="cart-btn w-full">Add to Cart</button>
+          <p>❤️</p>
+        </div>
+      </div>
+
+      <div class="watch-container right hidden">
+        <img
+          src="./IMAGES/WATCH-3.png"
+          alt="watch-image"
+          class="carousel-image"
+        />
+
+        <img
+          class="shade"
+          src="./IMAGES/right-shade.png"
+          alt="watch-shade"
+        />
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
